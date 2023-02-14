@@ -47,10 +47,8 @@ contract Vault is Ownable,AccessControlEnumerable {
      * - 'amount' amount of token in transaction
      * - 'to' receipt address
      */
-    function withdraw(
-        uint256 _amount,
-        address _to
-    ) external onlyWithdrawer {
+    function withdraw(uint256 _amount, address _to) external onlyWithdrawer
+    {
         require(!Address.isContract(msg.sender));
         require(withdrawEnable,"Withdraw is not available");
         require(_amount<=maxWithdrawAmount,"Exceed maximum amount");

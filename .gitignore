@@ -1,0 +1,12 @@
+SmartContracts/node_modules
+API/.env
+SmartContracts/.env
+SmartContracts/coverage
+SmartContracts/coverage.json
+SmartContracts/typechain
+SmartContracts/typechain-types
+
+# Hardhat files
+SmartContracts/cache
+SmartContracts/artifacts
+
